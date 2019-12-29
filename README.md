@@ -7,9 +7,11 @@ TPAS provided in source for whom who like to develop or in JAR file for ease of 
    <img width="400" height="280" src="https://github.com/Farzin-Negahbani/Namira_TPAS/blob/master/Images/friendly.jpg">
 </p>
 <p float="center">
-  <img width="200" height="200" src="https://github.com/Farzin-Negahbani/Namira_TPAS/blob/master/Images/start.jpeg" hspace="117">
+  <img width="200" height="200" src="https://github.com/Farzin-Negahbani/Namira_TPAS/blob/master/Images/start.jpeg" hspace="13.5%">
   <img width="400" height="280" src="https://github.com/Farzin-Negahbani/Namira_TPAS/blob/master/Images/scoreboard.jpg">
 </p>
+
+Some application screenshots.
 
 ## Why is this useful?
 - Runs custom Soccer 2D matches just by some clicks using a user friendly GUI.
