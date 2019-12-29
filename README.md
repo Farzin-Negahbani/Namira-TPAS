@@ -1,4 +1,4 @@
-# TPAS A Tournament Planning and Analyzing Softwar
+# TPAS A Tournament Planning and Analyzing Software
 TPAS, providing a user friendly application for running soccer simulation 2D games in different modes including Friendly match, World Cup, League and Cup. Also, it utilizes [NAMIRA LOGANALYZER](https://github.com/Farzin-Negahbani/Namira_LogAnalyzer) in order to give detailed reports and analysis.
 TPAS provided in source for whom who like to develop or in JAR file for ease of use. This tool tries to provide ease of use to soccer simulation users. 
 
