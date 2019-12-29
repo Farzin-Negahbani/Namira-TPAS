@@ -16,10 +16,6 @@ Or you can compile using source provided on dev branch.
 #### For Using JAR File
 Make sure you have python 3.x, java 8 or higher and javafx 1.8 orhigher running on your machine.
 
-## Capabilities
-Running differnt types of matches:
-- Friendly Match
-
 ### How to Run TPAS
 #### Using JAR file
     python3 runner.py 
