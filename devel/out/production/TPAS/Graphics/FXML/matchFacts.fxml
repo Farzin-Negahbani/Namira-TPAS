@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="239.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="16.0" layoutY="55.0" prefHeight="146.0" prefWidth="691.0">
+        <columns>
+          <TableColumn prefWidth="121.0" text="Team" />
+          <TableColumn prefWidth="225.0" text="Shoot">
+               <columns>
+                  <TableColumn prefWidth="90.0" text="On Target" />
+                  <TableColumn prefWidth="87.0" text="Off Target" />
+                  <TableColumn text="Accuracy" />
+               </columns>
+            </TableColumn>
+            <TableColumn prefWidth="244.0" text="Pass">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="True" />
+                  <TableColumn prefWidth="75.0" text="Wrong" />
+                  <TableColumn prefWidth="75.0" text="Accuracy" />
+               </columns>
+            </TableColumn>
+            <TableColumn prefWidth="89.0" text="Possesion" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="15.0" prefWidth="86.0" text="Match Facts" />
+   </children>
+</AnchorPane>
