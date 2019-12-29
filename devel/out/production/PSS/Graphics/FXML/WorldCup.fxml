@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="644.0" stylesheets="@CSS/WorldCup.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="263.0" layoutY="29.0" text="WorldCup">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <HBox layoutX="336.0" layoutY="454.0" prefHeight="25.0" prefWidth="173.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="100.0" text="Stamina     " />
+            <Spinner editable="true" prefHeight="25.0" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <CheckBox layoutX="53.0" layoutY="523.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Penalty Mode" />
+      <CheckBox layoutX="53.0" layoutY="554.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Golden Goal" />
+      <CheckBox layoutX="337.0" layoutY="523.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Foul" />
+      <HBox layoutX="337.0" layoutY="488.0" prefHeight="25.0" prefWidth="173.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="101.0" text="Number of Match">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Spinner editable="true" prefHeight="25.0" prefWidth="77.0" />
+         </children>
+      </HBox>
+      <CheckBox layoutX="337.0" layoutY="554.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Offside" />
+      <Separator layoutX="2.0" layoutY="434.0" prefWidth="200.0" />
+      <Label layoutX="13.0" layoutY="411.0" text="Game Settings" />
+      <Label layoutX="6.0" layoutY="54.0" text="WorldCup Settings" />
+      <Separator layoutY="77.0" prefWidth="200.0" />
+      <HBox layoutX="78.0" layoutY="97.0" prefHeight="25.0" prefWidth="155.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="100.0" text="Number of Teams" />
+            <Spinner editable="true" prefHeight="25.0" prefWidth="52.0" />
+         </children>
+      </HBox>
+      <Button layoutX="564.0" layoutY="580.0" mnemonicParsing="false" text="Start" />
+      <Button layoutX="488.0" layoutY="580.0" mnemonicParsing="false" text="Back" />
+      <TabPane layoutY="143.0" prefHeight="251.0" prefWidth="644.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Group A">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="230.0" prefWidth="630.0">
+                     <children>
+                        <Button layoutX="3.0" layoutY="10.0" mnemonicParsing="false" text="Add" />
+                        <Button layoutX="51.0" layoutY="10.0" mnemonicParsing="false" text="Remove" />
+                        <TableView layoutX="-6.0" layoutY="39.0" prefHeight="191.0" prefWidth="644.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+                           <columns>
+                              <TableColumn prefWidth="41.0" text="N." />
+                              <TableColumn prefWidth="145.0" text="Team Name" />
+                              <TableColumn prefWidth="463.0" text="Binary Location" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Group B">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="230.0" prefWidth="630.0">
+                     <children>
+                        <Button layoutX="3.0" layoutY="10.0" mnemonicParsing="false" text="Add" />
+                        <Button layoutX="51.0" layoutY="10.0" mnemonicParsing="false" text="Remove" />
+                        <TableView layoutX="-6.0" layoutY="39.0" prefHeight="191.0" prefWidth="644.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+                           <columns>
+                              <TableColumn prefWidth="41.0" text="N." />
+                              <TableColumn prefWidth="145.0" text="Team Name" />
+                              <TableColumn prefWidth="463.0" text="Binary Location" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Group C">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="230.0" prefWidth="630.0">
+                     <children>
+                        <Button layoutX="3.0" layoutY="10.0" mnemonicParsing="false" text="Add" />
+                        <Button layoutX="51.0" layoutY="10.0" mnemonicParsing="false" text="Remove" />
+                        <TableView layoutX="-6.0" layoutY="39.0" prefHeight="191.0" prefWidth="644.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+                           <columns>
+                              <TableColumn prefWidth="41.0" text="N." />
+                              <TableColumn prefWidth="145.0" text="Team Name" />
+                              <TableColumn prefWidth="463.0" text="Binary Location" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Group D">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="230.0" prefWidth="630.0">
+                     <children>
+                        <Button layoutX="3.0" layoutY="10.0" mnemonicParsing="false" text="Add" />
+                        <Button layoutX="51.0" layoutY="10.0" mnemonicParsing="false" text="Remove" />
+                        <TableView layoutY="39.0" prefHeight="191.0" prefWidth="644.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="39.0">
+                           <columns>
+                              <TableColumn prefWidth="41.0" text="N." />
+                              <TableColumn prefWidth="145.0" text="Team Name" />
+                              <TableColumn prefWidth="463.0" text="Binary Location" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="577.0" layoutY="97.0" mnemonicParsing="false" text="Shuffle " />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="644.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Save Config Ctrl + S" />
+              <MenuItem mnemonicParsing="false" text="Load Config Ctrl + L" />
+                  <MenuItem mnemonicParsing="false" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox layoutX="52.0" layoutY="489.0" prefHeight="25.0" prefWidth="180.0">
+         <children>
+            <CheckBox fx:id="extraHalftTimeCheckBox" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="Extra Half Time" />
+            <Spinner fx:id="extraHalfTimeSpinner" editable="true" prefHeight="25.0" prefWidth="97.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="52.0" layoutY="454.0" prefHeight="25.0" prefWidth="180.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="100.0" text="Half Time" />
+            <Spinner fx:id="halfeTimeSpinner" editable="true" prefHeight="25.0" prefWidth="89.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="644.0" stylesheets="@CSS/League.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.leagueController">
+   <children>
+      <Label layoutX="301.0" layoutY="34.0" text="League">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <HBox layoutX="309.0" layoutY="392.0" prefHeight="26.0" prefWidth="190.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="78.0" text="Stamina " />
+            <Spinner fx:id="staminaSpinner" editable="true" prefHeight="25.0" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <CheckBox fx:id="penaltyModeCheckBox" layoutX="54.0" layoutY="461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Penalty Mode" />
+      <CheckBox fx:id="goldenGoalCheckBox" layoutX="54.0" layoutY="492.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Golden Goal" />
+      <CheckBox fx:id="foulCheckBox" layoutX="309.0" layoutY="461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Foul" />
+      <HBox layoutX="309.0" layoutY="426.0" prefHeight="26.0" prefWidth="190.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="101.0" text="Number of Match">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="numberOfMatchSpinner" editable="true" prefHeight="26.0" prefWidth="90.0" />
+         </children>
+      </HBox>
+      <CheckBox fx:id="offsideCheckBox" layoutX="309.0" layoutY="492.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Offside" />
+      <Separator layoutX="2.0" layoutY="368.0" prefWidth="200.0" />
+      <Label layoutX="14.0" layoutY="344.0" text="Game Settings" />
+      <Label layoutX="14.0" layoutY="59.0" text="League Settings" />
+      <Button fx:id="addButton" layoutX="16.0" layoutY="124.0" mnemonicParsing="false" text="Add" />
+      <Button fx:id="removeButton" layoutX="62.0" layoutY="124.0" mnemonicParsing="false" text="Remove" />
+      <Button fx:id="shuffleButton" layoutX="132.0" layoutY="124.0" mnemonicParsing="false" text="Shuffle " />
+      <TableView fx:id="leagueTableView" layoutX="16.0" layoutY="164.0" prefHeight="170.0" prefWidth="611.0">
+        <columns>
+          <TableColumn fx:id="teamNumberColumn" prefWidth="41.0" text="N." />
+          <TableColumn fx:id="teamNameColumn" prefWidth="145.0" text="Team Name" />
+            <TableColumn fx:id="binaryLocationColumn" prefWidth="424.0" text="Binary Location" />
+        </columns>
+      </TableView>
+      <Separator layoutX="2.0" layoutY="81.0" prefWidth="200.0" />
+      <HBox layoutX="386.0" layoutY="97.0" prefHeight="26.0" prefWidth="214.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="118.0" text="Number of Teams" />
+            <Spinner fx:id="numberOfTeamsSpinner" editable="true" prefHeight="26.0" prefWidth="97.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="173.0" layoutY="97.0" prefHeight="26.0" prefWidth="222.0">
+         <children>
+            <Label prefHeight="23.0" prefWidth="96.0" text="League Name" />
+            <TextField fx:id="nameTextField" prefHeight="26.0" prefWidth="108.0" promptText="League Name" />
+         </children>
+      </HBox>
+      <Button fx:id="startButton" layoutX="559.0" layoutY="533.0" mnemonicParsing="false" text="Start" />
+      <Button fx:id="backButton" layoutX="493.0" layoutY="533.0" mnemonicParsing="false" text="Back" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="644.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="saveMenuItem" mnemonicParsing="false" text="Save Config Ctrl + S" />
+                  <MenuItem fx:id="loadMenuItem" mnemonicParsing="false" text="Load Config Ctrl + L" />
+                  <MenuItem fx:id="exitMenuItem" mnemonicParsing="false" text="Exit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <HBox layoutX="53.0" layoutY="428.0" prefHeight="26.0" prefWidth="222.0">
+         <children>
+            <CheckBox fx:id="extraHalfTimeCheckBox" mnemonicParsing="false" prefHeight="25.0" prefWidth="132.0" text="Extra Half Time" />
+            <Spinner fx:id="extraHalfTimeSpinner" editable="true" prefHeight="26.0" prefWidth="91.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="53.0" layoutY="393.0" prefHeight="26.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="34.0" prefWidth="100.0" text="Half Time" />
+            <Spinner fx:id="halfTimeSpinner" editable="true" prefHeight="26.0" prefWidth="106.0" />
+         </children>
+      </HBox>
+      <Label fx:id="statusLabel" layoutX="1.0" layoutY="558.0" prefHeight="17.0" prefWidth="313.0" />
+      <CheckBox fx:id="syncModeCheckBox" layoutX="310.0" layoutY="525.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Sync Mode" />
+      <CheckBox fx:id="monitorCheckBox" layoutX="54.0" layoutY="524.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Monitor" />
+   </children>
+</AnchorPane>

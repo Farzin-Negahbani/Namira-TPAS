@@ -1,0 +1,52 @@
+.root {
+-fx-base: rgb(26, 26, 26);
+-fx-background: rgb(26, 26, 26);
+-fx-control-inner-background:  rgb(26 , 26 , 26 );
+}
+
+.label{
+	-fx-background-color : transparent;
+-fx-text-fill: cyan;
+}
+.button{
+-fx-background-color : transparent;
+-fx-text-fill: cyan;
+}
+.text-field{
+-fx-text-fill: cyan;
+-fx-prompt-text-fill: rgb(185,185,185);
+}
+.tab {
+-fx-background-color: linear-gradient(to top, -fx-base, derive(-fx-base,30%));
+}
+.menu-bar {
+-fx-background-color: linear-gradient(to bottom, -fx-base, derive(-fx-base,30%));
+}
+ 
+.tool-bar:horizontal {
+-fx-background-color:
+linear-gradient(to bottom, derive(-fx-base,+50%), derive(-fx-base,-40%), derive(-fx-base,-20%));
+}
+ 
+ 
+.button:hover {
+-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+-fx-color: -fx-hover-base;
+}
+ 
+.separator-label {
+-fx-text-fill: orange;
+}
+#loadBinaryLeft{
+	-fx-background-color : rgb(255,215,0);
+	-fx-text-fill : black;
+    -fx-background-radius: 50%;
+}
+#loadBinaryRight{
+	-fx-background-color : blue;
+	-fx-text-fill : black;
+	  -fx-background-radius: 50%;
+}
+#label1{
+    -fx-text-fill: white;
+}

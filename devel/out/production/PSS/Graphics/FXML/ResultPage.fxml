@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="656.0" stylesheets="@CSS/Cup.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.resultPageController">
+   <children>
+      <TableView fx:id="resualtTable" layoutX="14.0" layoutY="41.0" prefHeight="200.0" prefWidth="634.0">
+        <columns>
+          <TableColumn fx:id="resualtPositionColumn" prefWidth="67.0" text="Position" />
+          <TableColumn fx:id="resualtTeamColumn" prefWidth="155.0" text="Team" />
+            <TableColumn fx:id="resualtPlayedColumn" prefWidth="72.0" text="Played" />
+            <TableColumn fx:id="resualtWonColumn" prefWidth="50.0" text="Won" />
+            <TableColumn fx:id="resualtDrawnColumn" prefWidth="59.0" text="Drawn" />
+            <TableColumn fx:id="resualtLostColumn" prefWidth="53.0" text="Lost" />
+            <TableColumn fx:id="resualtPointsColumn" prefWidth="61.0" text="Points" />
+            <TableColumn fx:id="resualtGoalForColumn" prefWidth="39.0" resizable="false" text="GF" />
+            <TableColumn fx:id="resualtGoalAgainstColumn" prefWidth="37.0" text="GA" />
+            <TableColumn fx:id="resualtGoalDifColumn" prefWidth="38.0" text="GD" />
+        </columns>
+      </TableView>
+      <Separator layoutX="202.0" layoutY="33.0" prefWidth="200.0" />
+      <Label layoutX="267.0" layoutY="14.0" text="Result Table" />
+      <Separator layoutX="199.0" layoutY="274.0" prefWidth="200.0" />
+      <Label layoutX="279.0" layoutY="254.0" text="Fixtures" />
+      <ListView fx:id="fixturesListView" layoutX="64.0" layoutY="282.0" prefHeight="277.0" prefWidth="480.0" />
+   </children>
+</AnchorPane>

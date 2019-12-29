@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="656.0" stylesheets="@CSS/Cup.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.resultPageController">
+   <children>
+      <TableView fx:id="resualtTable" layoutX="13.0" layoutY="65.0" prefHeight="200.0" prefWidth="634.0">
+        <columns>
+          <TableColumn fx:id="resualtPositionColumn" prefWidth="67.0" text="Position" />
+          <TableColumn fx:id="resualtTeamColumn" prefWidth="155.0" text="Team" />
+            <TableColumn fx:id="resualtPlayedColumn" prefWidth="72.0" text="Played" />
+            <TableColumn fx:id="resualtWonColumn" prefWidth="50.0" text="Won" />
+            <TableColumn fx:id="resualtDrawnColumn" prefWidth="59.0" text="Drawn" />
+            <TableColumn fx:id="resualtLostColumn" prefWidth="53.0" text="Lost" />
+            <TableColumn fx:id="resualtPointsColumn" prefWidth="61.0" text="Points" />
+            <TableColumn fx:id="resualtGoalForColumn" prefWidth="39.0" resizable="false" text="GF" />
+            <TableColumn fx:id="resualtGoalAgainstColumn" prefWidth="37.0" text="GA" />
+            <TableColumn fx:id="resualtGoalDifColumn" prefWidth="38.0" text="GD" />
+        </columns>
+      </TableView>
+      <Separator layoutX="13.0" layoutY="56.0" prefWidth="200.0" />
+      <Label layoutX="33.0" layoutY="38.0" text="Result Table" />
+      <Separator layoutX="13.0" layoutY="294.0" prefWidth="200.0" />
+      <Label layoutX="37.0" layoutY="274.0" text="Fixtures" />
+      <ListView fx:id="fixturesListView" layoutX="13.0" layoutY="302.0" prefHeight="277.0" prefWidth="347.0" />
+      <Label layoutX="384.0" layoutY="387.0" text="Current Match" />
+      <Label fx:id="currentMatchLabel" layoutX="394.0" layoutY="426.0" prefHeight="15.0" prefWidth="244.0" />
+      <Label layoutX="386.0" layoutY="477.0" text="Analyser" />
+      <Button fx:id="AselectedButton" disable="true" layoutX="384.0" layoutY="522.0" mnemonicParsing="false" text="Analyse selectedd" />
+      <Button fx:id="AallButton" cancelButton="true" disable="true" layoutX="538.0" layoutY="523.0" mnemonicParsing="false" text="Analyse all" />
+      <Label layoutX="383.0" layoutY="292.0" text="Tournament Status" />
+      <Label fx:id="completedPercantageLabel" layoutX="579.0" layoutY="326.0" prefHeight="16.0" prefWidth="43.0" />
+      <ProgressBar fx:id="progressBar" layoutX="406.0" layoutY="325.0" prefHeight="20.0" prefWidth="163.0" progress="0.0" />
+      <MenuBar prefHeight="29.0" prefWidth="656.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="saveMenuItem" mnemonicParsing="false" text="Save Config Ctrl + S" />
+                  <MenuItem fx:id="loadMenuItem" mnemonicParsing="false" text="Load Config Ctrl + L" />
+                  <MenuItem fx:id="exitMenuItem" mnemonicParsing="false" text="Exit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

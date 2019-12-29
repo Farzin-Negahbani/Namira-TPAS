@@ -1,0 +1,74 @@
+friendly match :
+	.Penalty mmode   -> on/of
+	.extra time    
+	.offside
+	.foul         -> on/off
+	.half time      ->int
+	.extra halftime  ->int
+	save load  config
+	.auto mode
+	.golden goal
+	.sync mode
+	.stamina  -> int
+	.Number of matches ->int
+	
+	
+cup:
+	.Penalty mmode   -> on/of
+	.extra time    
+	.offside
+	.foul         -> on/off
+	.half time      ->int
+	.extra halftime  ->int
+	.save load  config
+	.auto mode
+	.golden goal
+	.sync mode
+	.stamina  -> int
+	
+	.number of teams
+	.Number of matches ->int
+	.Cup Title
+	
+
+tournament:
+
+	.Penalty mmode   -> on/of
+	.extra time    
+	.offside
+	.foul         -> on/off
+	.half time      ->int
+	.extra halftime  ->int
+	.save load  config
+	.auto mode
+	.golden goal
+	.sync mode
+	.stamina  -> int
+
+	
+	.number of teams
+	.Number of matches ->int
+	.Cup Title
+
+	
+
+
+
+League:
+
+	.Penalty mmode   -> on/of
+	.extra time    
+	.offside
+	.foul         -> on/off
+	.half time      ->int
+	.extra halftime  ->int
+	.save load  config
+	.auto mode
+	.golden goal
+	.sync mode
+	.stamina  -> int
+
+	
+	.number of teams
+	.Number of matches ->int
+	.Cup Title
