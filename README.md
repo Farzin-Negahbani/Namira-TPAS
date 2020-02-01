@@ -34,6 +34,12 @@ Make sure you have python 3.x, java 8 or higher and javafx 1.8 orhigher running 
 #### Application
 under construction...
 
+## TODO
+- [ ] Complete Readme
+- [ ] Add analyzer result page
+- [ ] Add worldcup controller
+- [ ] add League controller 
+
 ## Publication
 If you found this work useful please give credits to the authors by citing:
 - Asali, E., Negahbani, F., Tafazzol, S., Maghareh, M.S., Bahmeie, S., Barazandeh, S., Mirian, S., & Moshkelgosha, M. (2018). Namira Soccer 2 D Simulation Team Description Paper 2018. [PDF](https://archive.robocup.info/Soccer/Simulation/2D/TDPs/RoboCup/2018/Namira_SS2D_RC2018_TDP.pdf)
